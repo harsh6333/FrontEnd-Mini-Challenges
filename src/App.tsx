@@ -2,7 +2,8 @@ import React, { useState, ReactElement } from "react";
 import Counter from "./Challenges/1.Counter/Counter";
 import ProgMulti from "./Challenges/2.Programming-Multiverse/ProgMulti";
 import Anagram from "./Challenges/3.Anagram-Checker/Anagram";
-
+import Quotes from "./Challenges/4.Quotes-Generator/Quotes";
+import ImageGallery from "./Challenges/5.Image-Gallery/ImageGallery";
 interface Challenge {
   name: string;
   component: React.FC;
@@ -17,6 +18,8 @@ function App() {
     { name: "Counter", component: Counter },
     { name: "Programming Multiverse", component: ProgMulti },
     { name: "Anagram Checker", component: Anagram },
+    { name: "Quotes Generator", component: Quotes },
+    { name: "Image Gallery", component: ImageGallery },
   ];
   const handleselected = (index: number) => {
     setSelectedChallenge(React.createElement(challenges[index].component));
