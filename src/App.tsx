@@ -6,6 +6,9 @@ import Quotes from "./Challenges/4.Quotes-Generator/Quotes";
 import ImageGallery from "./Challenges/5.Image-Gallery/ImageGallery";
 import Accordion from "./Challenges/6.Accordion/Accordion";
 import Backgroundchanger from "./Challenges/7.Background-Changer/Backgroundchanger";
+import QRCodeGenerator from "./Challenges/8.QRCodeGenerator/QRCodeGenerator";
+import YourSport from "./Challenges/9.Your-Sport/YourSport";
+import TableColorizer from "./Challenges/10.Table-Colorizer/TableColorizer";
 interface Challenge {
   name: string;
   component: React.FC;
@@ -24,6 +27,9 @@ function App() {
     { name: "Image Gallery", component: ImageGallery },
     { name: "Accordion", component: Accordion },
     { name: "Background Changer", component: Backgroundchanger },
+    { name: "QRCode Generator", component: QRCodeGenerator },
+    { name: "Your Sport", component: YourSport },
+    { name: "Table Colorizer", component: TableColorizer },
   ];
   const handleselected = (index: number) => {
     setSelectedChallenge(React.createElement(challenges[index].component));
