@@ -10,6 +10,9 @@ import QRCodeGenerator from "./Challenges/8.QRCodeGenerator/QRCodeGenerator";
 import YourSport from "./Challenges/9.Your-Sport/YourSport";
 import TableColorizer from "./Challenges/10.Table-Colorizer/TableColorizer";
 import Pagination from "./Challenges/11.Pagination/Pagination";
+import Stack from "./Challenges/12.Stack/Stack";
+import WordCount from "./Challenges/13.Word-Count/WordCount";
+import TempConv from "./Challenges/14.Temperature-Converter/TempConv";
 interface Challenge {
   name: string;
   component: React.FC;
@@ -31,8 +34,10 @@ function App() {
     { name: "QRCode Generator", component: QRCodeGenerator },
     { name: "Your Sport", component: YourSport },
     { name: "Table Colorizer", component: TableColorizer },
-    {name:"Pagination",component:Pagination}
-   
+    { name: "Pagination", component: Pagination },
+    { name: "Stack", component: Stack },
+    { name: "Word Count", component: WordCount },
+    { name: "Temperature Converter", component: TempConv },
   ];
   const handleselected = (index: number) => {
     setSelectedChallenge(React.createElement(challenges[index].component));
