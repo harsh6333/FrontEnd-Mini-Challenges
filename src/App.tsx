@@ -41,7 +41,7 @@ function App() {
     { name: "Word Count", component: WordCount },
     { name: "Temperature Converter", component: TempConv },
     { name: "Star Rating", component: StarRating },
-    {name:"Transformed String Transformers", component:TransformedString}
+    {name:"String Transformers", component:TransformedString}
   ];
   const handleselected = (index: number) => {
     setSelectedChallenge(React.createElement(challenges[index].component));
