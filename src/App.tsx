@@ -14,7 +14,7 @@ import Stack from "./Challenges/12.Stack/Stack";
 import WordCount from "./Challenges/13.Word-Count/WordCount";
 import TempConv from "./Challenges/14.Temperature-Converter/TempConv";
 import StarRating from "./Challenges/15.Star-Rating/StarRating";
-import TransformedString from "./Challenges/16.Transformed-String/TransformedString";
+import TransformedString from "./Challenges/16.String-Transformer/StringTransformer";
 interface Challenge {
   name: string;
   component: React.FC;
@@ -41,7 +41,7 @@ function App() {
     { name: "Word Count", component: WordCount },
     { name: "Temperature Converter", component: TempConv },
     { name: "Star Rating", component: StarRating },
-    {name:"Transformed String", component:TransformedString}
+    {name:"Transformed String Transformers", component:TransformedString}
   ];
   const handleselected = (index: number) => {
     setSelectedChallenge(React.createElement(challenges[index].component));
